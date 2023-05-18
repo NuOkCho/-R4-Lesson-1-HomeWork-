@@ -14,6 +14,13 @@
 		449FD9CE2A138AC90093C0D2 /* _R4_Lesson_1_HomeWork_.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 449FD9CC2A138AC90093C0D2 /* _R4_Lesson_1_HomeWork_.xcdatamodeld */; };
 		449FD9D02A138ACA0093C0D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 449FD9CF2A138ACA0093C0D2 /* Assets.xcassets */; };
 		449FD9D32A138ACA0093C0D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 449FD9D12A138ACA0093C0D2 /* LaunchScreen.storyboard */; };
+		44FD35742A16982D00D5A4B0 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 44FD35732A16982D00D5A4B0 /* SnapKit */; };
+		44FD35772A16983800D5A4B0 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 44FD35762A16983800D5A4B0 /* Kingfisher */; };
+		44FD35792A1698DB00D5A4B0 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FD35782A1698DB00D5A4B0 /* ApiManager.swift */; };
+		44FD357B2A16990300D5A4B0 /* GetRequestPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FD357A2A16990300D5A4B0 /* GetRequestPage.swift */; };
+		44FD357D2A16992B00D5A4B0 /* GetRequestFullPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FD357C2A16992B00D5A4B0 /* GetRequestFullPage.swift */; };
+		44FD357F2A16994400D5A4B0 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FD357E2A16994400D5A4B0 /* CustomCell.swift */; };
+		44FD35812A16996A00D5A4B0 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FD35802A16996A00D5A4B0 /* NewsModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,11 @@
 		449FD9CF2A138ACA0093C0D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		449FD9D22A138ACA0093C0D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		449FD9D42A138ACA0093C0D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44FD35782A1698DB00D5A4B0 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		44FD357A2A16990300D5A4B0 /* GetRequestPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRequestPage.swift; sourceTree = "<group>"; };
+		44FD357C2A16992B00D5A4B0 /* GetRequestFullPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRequestFullPage.swift; sourceTree = "<group>"; };
+		44FD357E2A16994400D5A4B0 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		44FD35802A16996A00D5A4B0 /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +45,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44FD35772A16983800D5A4B0 /* Kingfisher in Frameworks */,
+				44FD35742A16982D00D5A4B0 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,9 +72,9 @@
 		449FD9C22A138AC90093C0D2 /* (R4)Lesson-1(HomeWork) */ = {
 			isa = PBXGroup;
 			children = (
-				449FD9C32A138AC90093C0D2 /* AppDelegate.swift */,
-				449FD9C52A138AC90093C0D2 /* SceneDelegate.swift */,
-				449FD9C72A138AC90093C0D2 /* ViewController.swift */,
+				44FD356F2A16971700D5A4B0 /* SupportFiles */,
+				44FD35712A16976800D5A4B0 /* ApiManager */,
+				44FD35702A16975300D5A4B0 /* Views */,
 				449FD9C92A138AC90093C0D2 /* Main.storyboard */,
 				449FD9CF2A138ACA0093C0D2 /* Assets.xcassets */,
 				449FD9D12A138ACA0093C0D2 /* LaunchScreen.storyboard */,
@@ -68,6 +82,35 @@
 				449FD9CC2A138AC90093C0D2 /* _R4_Lesson_1_HomeWork_.xcdatamodeld */,
 			);
 			path = "(R4)Lesson-1(HomeWork)";
+			sourceTree = "<group>";
+		};
+		44FD356F2A16971700D5A4B0 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				449FD9C52A138AC90093C0D2 /* SceneDelegate.swift */,
+				449FD9C32A138AC90093C0D2 /* AppDelegate.swift */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		44FD35702A16975300D5A4B0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				449FD9C72A138AC90093C0D2 /* ViewController.swift */,
+				44FD357A2A16990300D5A4B0 /* GetRequestPage.swift */,
+				44FD357C2A16992B00D5A4B0 /* GetRequestFullPage.swift */,
+				44FD357E2A16994400D5A4B0 /* CustomCell.swift */,
+				44FD35802A16996A00D5A4B0 /* NewsModel.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		44FD35712A16976800D5A4B0 /* ApiManager */ = {
+			isa = PBXGroup;
+			children = (
+				44FD35782A1698DB00D5A4B0 /* ApiManager.swift */,
+			);
+			path = ApiManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +129,10 @@
 			dependencies = (
 			);
 			name = "(R4)Lesson-1(HomeWork)";
+			packageProductDependencies = (
+				44FD35732A16982D00D5A4B0 /* SnapKit */,
+				44FD35762A16983800D5A4B0 /* Kingfisher */,
+			);
 			productName = "(R4)Lesson-1(HomeWork)";
 			productReference = 449FD9C02A138AC90093C0D2 /* (R4)Lesson-1(HomeWork).app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +161,10 @@
 				Base,
 			);
 			mainGroup = 449FD9B72A138AC90093C0D2;
+			packageReferences = (
+				44FD35722A16982D00D5A4B0 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				44FD35752A16983800D5A4B0 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 449FD9C12A138AC90093C0D2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -143,7 +194,12 @@
 			files = (
 				449FD9C82A138AC90093C0D2 /* ViewController.swift in Sources */,
 				449FD9CE2A138AC90093C0D2 /* _R4_Lesson_1_HomeWork_.xcdatamodeld in Sources */,
+				44FD35792A1698DB00D5A4B0 /* ApiManager.swift in Sources */,
+				44FD35812A16996A00D5A4B0 /* NewsModel.swift in Sources */,
+				44FD357B2A16990300D5A4B0 /* GetRequestPage.swift in Sources */,
 				449FD9C42A138AC90093C0D2 /* AppDelegate.swift in Sources */,
+				44FD357D2A16992B00D5A4B0 /* GetRequestFullPage.swift in Sources */,
+				44FD357F2A16994400D5A4B0 /* CustomCell.swift in Sources */,
 				449FD9C62A138AC90093C0D2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,6 +416,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		44FD35722A16982D00D5A4B0 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		44FD35752A16983800D5A4B0 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		44FD35732A16982D00D5A4B0 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 44FD35722A16982D00D5A4B0 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		44FD35762A16983800D5A4B0 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 44FD35752A16983800D5A4B0 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		449FD9CC2A138AC90093C0D2 /* _R4_Lesson_1_HomeWork_.xcdatamodeld */ = {
